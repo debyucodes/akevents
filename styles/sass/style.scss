@@ -1,0 +1,111 @@
+@import 'setup';
+
+body {
+  margin: 15% auto;
+  text-align: center;
+  width: 80%;
+  border: 2px solid #404040;
+  color: #404040;
+  font-family: 'Lora', serif;
+  font-weight: 400;
+  letter-spacing: 1px;
+  line-height: 2;
+}
+
+header {
+  padding-top: 40px;
+
+  h1 {
+    padding: 50px 0;
+  }
+  
+  ul {
+    display:flex;
+    justify-content: space-evenly;
+    text-transform: uppercase;
+  }
+
+  li {
+    list-style: none;
+  }
+
+  a {
+    text-decoration: none;
+    color: dimgrey;
+  }
+}
+
+.about {
+  width: 60%;
+  margin: 50px auto;
+
+  h2 {
+    font-size: 35px;
+  }
+
+  div {
+    text-align: left;
+    margin: 50px 0;
+  }
+
+  div span {
+    text-decoration: underline;
+    font-style: normal;
+  }
+  
+  span {
+    font-style: italic;
+    font-weight: 600;
+  }
+}
+
+.contact {
+  background-color: #EDEDED;
+  margin: 30px auto;
+  width: 80%;
+
+  form {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    margin: 0 auto;
+
+    input,
+    textarea {
+      margin: 10px 0;
+      padding: 15px;
+    }
+  }
+
+  button {
+    padding: 20px;
+    width: 40%;
+    border: 2px solid black;
+    margin: 20px auto;
+  }
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin: 0 auto;
+
+  ul {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  li {
+    list-style: none;
+    border-radius: 50%;
+    background-color: black;
+    width: 30px;
+    height: 30px;
+    margin: 0 10px;
+  }
+
+  a {
+    color: white;
+  }
+}
