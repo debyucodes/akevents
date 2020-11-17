@@ -235,6 +235,28 @@ html {
   overflow: hidden;
 }
 
+.burger {
+  display: none;
+}
+
+.dropDown {
+  display: none;
+}
+
+@media (max-width: 800px) {
+  .burger {
+    display: block;
+    font-size: 2rem;
+    cursor: pointer;
+  }
+  hr {
+    width: 60%;
+  }
+  .menu {
+    display: none;
+  }
+}
+
 body {
   margin: 15% auto;
   text-align: center;
@@ -253,6 +275,7 @@ header {
 
 header h1 {
   padding: 50px 0;
+  font-size: 50px;
 }
 
 header ul {

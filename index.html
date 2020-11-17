@@ -12,11 +12,23 @@
 </head>
 <body>
   <header>
+    <div class="burger">
+      <i class="fas fa-bars"></i>
+      <hr>
+    </div>
+    <div class="dropDown">
+      <li><a href="#about">About</a></li>
+      <li><a href="">Upcoming Events</a></li>
+      <li><a href="">Chats with AK</a></li>
+      <li><a href="">Portfolio</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </div>
     <h1>AK Events Group</h1>
     <nav>
-      <ul>
+      <ul class="menu">
         <li>-</li>
         <li><a href="#about">About</a></li>
+        <li><a href="">Upcoming Events</a></li>
         <li><a href="">Chats with AK</a></li>
         <li><a href="">Portfolio</a></li>
         <li><a href="#contact">Contact</a></li>
@@ -52,19 +64,19 @@
     <section class="contact" id="contact">
       <h2>Contact Us</h2>
       <p>Shoot us a message, we'd love to work with you!</p>
-      <form action="">
+      <form action="http://www.focuspocus.io/magic/Akeventsgroupca@gmail.com" method="POST" enctype="multipart/form-data">
         <!-- name -->
         <label for="" class="sr-only">Name</label>
-        <input type="text" required placeholder="name*">
+        <input name="name" type="text" required placeholder="name*">
         <!-- email -->
         <label for="" class="sr-only">Email</label>
-        <input type="text" placeholder="email*">
+        <input name="email" type="email" placeholder="email*">
         <!-- phone -->
         <label for="" class="sr-only">Phone</label>
-        <input type="text" placeholder="phone">
+        <input name="phone" type="text" placeholder="phone">
         <!-- message -->
-        <textarea name="" id="" cols="30" rows="10" placeholder="Write your message here..."></textarea>
-        <button type="submit">SUBMIT</button>
+        <textarea name="message" id="" cols="30" rows="10" placeholder="Write your message here..." required></textarea>
+        <button type="submit" value="send">SUBMIT</button>
         <p>We respect your privacy.</p>
       </form>
     </section>
@@ -77,5 +89,8 @@
       <li><a href="https://www.facebook.com/akeventsgroup/" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
     </ul>
   </footer>
+
+  <script src='https://code.jquery.com/jquery-3.4.0.min.js' integrity='sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=' crossorigin='anonymous'></script>
+<script src="script.js"></script>
 </body>
 </html>

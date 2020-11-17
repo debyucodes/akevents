@@ -1,4 +1,6 @@
 @import 'setup';
+@import 'burger';
+@import 'mediaQueries';
 
 body {
   margin: 15% auto;
@@ -17,6 +19,7 @@ header {
 
   h1 {
     padding: 50px 0;
+    font-size: 50px;
   }
   
   ul {
