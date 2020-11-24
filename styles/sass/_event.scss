@@ -6,6 +6,11 @@
   position: relative;
   margin-bottom: 100px;
 
+  h4 {
+    background-color: #EDEDED;
+    margin: 15px 30px;
+  }
+
   ul {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -27,6 +32,13 @@
     }
   }
 }
+  
+.eventDetails img {
+    object-fit: contain;
+    margin: 0 auto;
+    padding: 20px;
+    max-height: 300px;
+  }
 
 .hiddenOverlay {
   display: none;

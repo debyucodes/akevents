@@ -252,6 +252,11 @@ html {
   margin-bottom: 100px;
 }
 
+.eventDetails h4 {
+  background-color: #EDEDED;
+  margin: 15px 30px;
+}
+
 .eventDetails ul {
   display: -ms-grid;
   display: grid;
@@ -274,6 +279,14 @@ html {
 .eventDetails ul li:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
+}
+
+.eventDetails img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  margin: 0 auto;
+  padding: 20px;
+  max-height: 300px;
 }
 
 .hiddenOverlay {
