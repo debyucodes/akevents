@@ -20,6 +20,7 @@ header {
   h1 {
     padding: 50px 0;
     font-size: 50px;
+    font-weight: 600;
   }
   
   ul {
@@ -35,7 +36,12 @@ header {
   a {
     text-decoration: none;
     color: dimgrey;
+
+    &:hover {
+      border-bottom: 2px solid dimgrey;
+    }
   }
+
 }
 
 .about {
@@ -86,6 +92,7 @@ header {
     width: 40%;
     border: 2px solid black;
     margin: 20px auto;
+    cursor: pointer;
   }
 }
 
@@ -112,4 +119,5 @@ footer {
   a {
     color: white;
   }
+
 }
