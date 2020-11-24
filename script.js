@@ -1,18 +1,41 @@
-console.log('hi')
-
 // Namespace object
 const app = {};
 
 // Init app
 app.init = () => {
   app.dropDown();
+  app.faq();
+  app.overlay();
+  app.closeOverlay();
 }
 
 // burger drop down
 app.dropDown = () => {
   $('.burger').click(function() {
-    $('.dropDown').toggle(800, "swing");
-    console.log('wtf')
+    $(this).next('.answer').toggle(800, "swing");
+  })
+}
+
+// FAQ 
+app.faq = () => {
+  $('.question').click(function(){
+    $(this).find('p').slideToggle(300);
+    $('i', this).toggleClass("fas fa-minus fas fa-plus")
+  })
+}
+
+// open overlay
+app.overlay = () => {
+  $('.eventDetails').find('li').click(function(){
+    console.log('welp')
+    $(this).next('div').fadeIn();
+  })
+}
+
+// close overlay
+app.closeOverlay = () => {
+  $('.closeOverlay').click(function(){
+    $(this.parentElement).hide();
   })
 }
 

@@ -1,5 +1,6 @@
 @import 'setup';
 @import 'burger';
+@import 'event';
 @import 'mediaQueries';
 
 body {
@@ -12,6 +13,12 @@ body {
   font-weight: 400;
   letter-spacing: 1px;
   line-height: 2;
+}
+
+img {
+  width: 100%;
+  max-width: 100%;
+  display: block;
 }
 
 header {
@@ -119,5 +126,23 @@ footer {
   a {
     color: white;
   }
+}
 
+.debyu {
+  color: black;
+  text-decoration: none;
+
+  &:hover {
+    color: grey;
+  }
+}
+
+.thankyou {
+  padding: 100px 0;
+}
+
+.wrapper {
+  margin: 5% auto;
+  width: 80%;
+  max-width: 1500px;
 }
