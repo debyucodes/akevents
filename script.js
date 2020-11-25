@@ -29,6 +29,7 @@ app.overlay = () => {
   $('.eventDetails').find('li').click(function(){
     console.log('welp')
     $(this).next('div').fadeIn();
+    $('body').addClass('noScroll');
   })
 }
 
@@ -36,6 +37,7 @@ app.overlay = () => {
 app.closeOverlay = () => {
   $('.closeOverlay').click(function(){
     $(this.parentElement).hide();
+    $('body').removeClass('noScroll')
   })
 }
 

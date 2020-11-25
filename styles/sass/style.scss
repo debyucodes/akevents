@@ -1,10 +1,11 @@
 @import 'setup';
 @import 'burger';
 @import 'event';
+@import 'portfolio';
 @import 'mediaQueries';
 
 body {
-  margin: 15% auto;
+  margin: 5% auto;
   text-align: center;
   width: 80%;
   border: 2px solid #404040;
@@ -22,7 +23,7 @@ img {
 }
 
 header {
-  padding-top: 40px;
+  padding-top: 20px;
 
   h1 {
     padding: 50px 0;
@@ -131,9 +132,10 @@ footer {
 .debyu {
   color: black;
   text-decoration: none;
-
-  &:hover {
+  
+  &:hover span{
     color: grey;
+    text-decoration: underline;
   }
 }
 

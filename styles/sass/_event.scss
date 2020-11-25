@@ -1,13 +1,19 @@
+.noScroll {
+  overflow: hidden;
+}
+
 .eventDes {
   text-align: left;
+
+  h3 {
+    text-align: center;
+  }
 }
 
 .eventDetails {
   position: relative;
-  margin-bottom: 100px;
 
   h4 {
-    background-color: #EDEDED;
     margin: 15px 30px;
   }
 
@@ -17,40 +23,70 @@
   list-style: none;
   
     li {
-    border: 1px solid black;
     margin: 20px;
-    -webkit-box-shadow: 10px 10px 7px -4px rgba(0,0,0,0.69);
-    -moz-box-shadow: 10px 10px 7px -4px rgba(0,0,0,0.69);
-    box-shadow: 10px 10px 7px -4px rgba(0,0,0,0.69);
-    transition: all 300ms ease;
     background-color: white;
     cursor: pointer;
-  
-      &:hover {
-        transform: scale(1.1);
-      }
+    border: 5px solid #fbf2e7;
+    transition: all 0.3s ease-out;
+
+    &:hover {
+      transform: scale(1.1);
+    }
     }
   }
 }
   
 .eventDetails img {
-    object-fit: contain;
+    object-fit: cover;
     margin: 0 auto;
-    padding: 20px;
     max-height: 300px;
+    max-width: 300px;
+    height: 300px;
+    margin-top: 20px;
   }
 
 .hiddenOverlay {
   display: none;
-  position: absolute;
-  background-color: white;
+  position: fixed;
+  background-color: rgba(238,231,220, 0.5);
   width: 100%;
   height: 100%;
   z-index: 1000;
   top: 0;
   left: 0;
-  padding: 0 100px;
+  bottom: 0;
+  right: 0;
+  overflow-y: scroll;
+
+  .innerOverlay {
+    background: white;
+    margin: 0 auto;
+    width: 80%;
+    margin-top: 20px;
+    padding: 50px;
+
+    p {
+      line-height: 1.5;
+    }
+  }
 }
+
+.overlayFlex {
+  display: flex;
+
+  div {
+    width: 60%;
+  }
+  
+  img {
+    width: 40%
+  }
+
+  p {
+    text-align: left;
+  }
+}
+
 
 .closeOverlay {
   position: absolute;

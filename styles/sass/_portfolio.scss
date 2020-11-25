@@ -1,0 +1,19 @@
+.portfolio {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  
+  li {
+    // margin: 20px;
+    margin: 20px 0 20px 0;
+    width: 250px;
+    height: 250px;
+    border: 5px solid #fbf2e7;
+
+    img{
+      object-fit: cover;
+      width: 250px;
+      height: 250px;
+    }
+  }
+}
