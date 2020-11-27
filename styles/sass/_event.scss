@@ -4,41 +4,51 @@
 
 .eventDes {
   text-align: left;
-
-  h3 {
-    text-align: center;
-  }
 }
 
 .eventDetails {
   position: relative;
 
-  h4 {
-    margin: 15px 30px;
+  h4, 
+  p {
+    margin: 0;
   }
 
   ul {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(300px, 2fr));
   list-style: none;
+  text-align: left;
+
   
     li {
     margin: 20px;
     background-color: white;
-    cursor: pointer;
-    border: 5px solid #fbf2e7;
     transition: all 0.3s ease-out;
-
-    &:hover {
-      transform: scale(1.1);
     }
+
+    h5 {
+      cursor: pointer;
+      font-size: 1.2rem;
+      margin-top: 10px;
+      padding: 0;
+
+      &:hover {
+        color: grey;
+        text-decoration: underline;
+      }
+    }
+
+    hr {
+      margin:  10px 0 0 0;
+      max-width: 100px;
     }
   }
 }
   
 .eventDetails img {
     object-fit: cover;
-    margin: 0 auto;
+    // margin: 0 auto;
     max-height: 300px;
     max-width: 300px;
     height: 300px;
@@ -68,12 +78,22 @@
     p {
       line-height: 1.5;
     }
+
+    a {
+      color: black;
+      text-decoration: none;
+    }
+
+    i {
+      margin-right: 10px;
+      font-size: 1.5rem;
+    }
   }
 }
 
 .overlayFlex {
   display: flex;
-
+  
   div {
     width: 60%;
   }
@@ -81,9 +101,10 @@
   img {
     width: 40%
   }
-
+  
   p {
     text-align: left;
+    margin-top: 20px;
   }
 }
 

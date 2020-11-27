@@ -251,44 +251,51 @@ html {
   text-align: left;
 }
 
-.eventDes h3 {
-  text-align: center;
-}
-
 .eventDetails {
   position: relative;
 }
 
-.eventDetails h4 {
-  margin: 15px 30px;
+.eventDetails h4,
+.eventDetails p {
+  margin: 0;
 }
 
 .eventDetails ul {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(300px, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  -ms-grid-columns: (minmax(300px, 2fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(300px, 2fr));
   list-style: none;
+  text-align: left;
 }
 
 .eventDetails ul li {
   margin: 20px;
   background-color: white;
-  cursor: pointer;
-  border: 5px solid #fbf2e7;
   -webkit-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
 }
 
-.eventDetails ul li:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+.eventDetails ul h5 {
+  cursor: pointer;
+  font-size: 1.2rem;
+  margin-top: 10px;
+  padding: 0;
+}
+
+.eventDetails ul h5:hover {
+  color: grey;
+  text-decoration: underline;
+}
+
+.eventDetails ul hr {
+  margin: 10px 0 0 0;
+  max-width: 100px;
 }
 
 .eventDetails img {
   -o-object-fit: cover;
      object-fit: cover;
-  margin: 0 auto;
   max-height: 300px;
   max-width: 300px;
   height: 300px;
@@ -321,6 +328,16 @@ html {
   line-height: 1.5;
 }
 
+.hiddenOverlay .innerOverlay a {
+  color: black;
+  text-decoration: none;
+}
+
+.hiddenOverlay .innerOverlay i {
+  margin-right: 10px;
+  font-size: 1.5rem;
+}
+
 .overlayFlex {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -337,6 +354,7 @@ html {
 
 .overlayFlex p {
   text-align: left;
+  margin-top: 20px;
 }
 
 .closeOverlay {

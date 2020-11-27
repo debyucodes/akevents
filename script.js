@@ -26,20 +26,21 @@ app.faq = () => {
 
 // open overlay
 app.overlay = () => {
-  $('.eventDetails').find('li').click(function(){
-    console.log('welp')
-    $(this).next('div').fadeIn();
+  $('.eventDetails').find('h5').click(function(){
+    $(this.parentElement).next('div').fadeIn();
     $('body').addClass('noScroll');
   })
 }
 
 // close overlay
 app.closeOverlay = () => {
-  $('.closeOverlay').click(function(){
-    $(this.parentElement).hide();
+  $('.hiddenOverlay').click(function(){
+    $(this).hide();
     $('body').removeClass('noScroll')
   })
 }
+
+
 
 // doc ready
 $(document).ready(function(){
