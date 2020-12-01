@@ -16,6 +16,7 @@
 
 @media (max-width: 500px) {
   body {
+    overflow-x: hidden;
     border: none;
     margin: 0 auto;
     width: 90%;
@@ -82,6 +83,22 @@
 
   footer {
     flex-direction: column-reverse;
+  }
 
+  // portfolio page
+  .portfolio {
+    margin: 0 auto;
+    padding: 0;
+    grid-template-columns: 1fr 1fr;
+
+    li {
+      width: 200px;
+      height: 200px;
+
+      img {
+        width: 200px;
+        height: 200px;
+      }
+    }
   }
 }

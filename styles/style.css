@@ -607,6 +607,7 @@ footer a {
 
 @media (max-width: 500px) {
   body {
+    overflow-x: hidden;
     border: none;
     margin: 0 auto;
     width: 90%;
@@ -662,5 +663,19 @@ footer a {
     -webkit-box-direction: reverse;
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
+  }
+  .portfolio {
+    margin: 0 auto;
+    padding: 0;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+  .portfolio li {
+    width: 200px;
+    height: 200px;
+  }
+  .portfolio li img {
+    width: 200px;
+    height: 200px;
   }
 }
