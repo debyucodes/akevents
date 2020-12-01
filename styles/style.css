@@ -622,6 +622,18 @@ footer a {
   .eventDetails ul li {
     margin: 0;
   }
+  .innerOverlay {
+    width: 100%;
+  }
+  .innerOverlay h2 {
+    line-height: 1.2;
+  }
+  .innerOverlay h4 {
+    font-size: 0.8rem;
+  }
+  .innerOverlay p {
+    line-height: 1;
+  }
   .hideInMobile {
     display: none;
   }
@@ -637,6 +649,7 @@ footer a {
   }
   .about {
     width: 100%;
+    text-align: left;
   }
   .contact {
     width: 100%;

@@ -36,6 +36,22 @@
     }
   }
 
+  .innerOverlay {
+    width: 100%;
+
+    h2 {
+      line-height: 1.2;
+    }
+
+    h4 {
+      font-size: 0.8rem;
+    }
+
+    p {
+      line-height: 1;
+    }
+  }
+
   .hideInMobile {
     display: none;
   }
@@ -52,7 +68,8 @@
 
   // about page
   .about {
-    width: 100%
+    width: 100%;
+    text-align: left;
   }
 
   .contact {
