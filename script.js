@@ -12,7 +12,7 @@ app.init = () => {
 // burger drop down
 app.dropDown = () => {
   $('.burger').click(function() {
-    $(this).next('.answer').toggle(800, "swing");
+    $('.dropDown').toggle(500);
   })
 }
 
@@ -20,7 +20,7 @@ app.dropDown = () => {
 app.faq = () => {
   $('.question').click(function(){
     $(this).find('p').slideToggle(300);
-    $('i', this).toggleClass("fas fa-minus fas fa-plus")
+    $('i', this).toggleClass("fas fa-minus fas fa-plus");
   })
 }
 
