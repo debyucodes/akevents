@@ -620,4 +620,17 @@ footer a {
   .eventDetails ul li {
     margin: 0;
   }
+  .hideInMobile {
+    display: none;
+  }
+  .overlayFlex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .overlayFlex div,
+  .overlayFlex img {
+    width: 100%;
+  }
 }

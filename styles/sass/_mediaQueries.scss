@@ -34,6 +34,17 @@
     margin: 0;
     }
   }
-  
-  
+
+  .hideInMobile {
+    display: none;
+  }
+
+  .overlayFlex {
+    flex-direction: column;
+    
+    div,
+    img {
+      width: 100%;
+    }
+  }
 }
