@@ -361,6 +361,7 @@ footer ul {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+  padding-left: 0;
 }
 
 footer li {
@@ -608,6 +609,7 @@ footer a {
   body {
     border: none;
     margin: 0 auto;
+    width: 90%;
   }
   header h1 {
     font-size: 40px;
@@ -632,5 +634,20 @@ footer a {
   .overlayFlex div,
   .overlayFlex img {
     width: 100%;
+  }
+  .about {
+    width: 100%;
+  }
+  .contact {
+    width: 100%;
+  }
+  .contact form {
+    width: 100%;
+  }
+  footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
   }
 }

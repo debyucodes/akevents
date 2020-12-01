@@ -15,10 +15,10 @@
 }
 
 @media (max-width: 500px) {
-  
   body {
     border: none;
     margin: 0 auto;
+    width: 90%;
   }
 
   header h1 {
@@ -27,6 +27,7 @@
     padding-bottom: 0;
   }
 
+  // event page
   .eventDetails ul {
     padding-left: 0;
 
@@ -46,5 +47,24 @@
     img {
       width: 100%;
     }
+  }
+
+
+  // about page
+  .about {
+    width: 100%
+  }
+
+  .contact {
+    width: 100%;
+
+    form {
+      width: 100%;
+    }
+  }
+
+  footer {
+    flex-direction: column-reverse;
+
   }
 }
