@@ -13,3 +13,27 @@
     display: none;
   }
 }
+
+@media (max-width: 500px) {
+  
+  body {
+    border: none;
+    margin: 0 auto;
+  }
+
+  header h1 {
+    font-size: 40px;
+    margin: 0;
+    padding-bottom: 0;
+  }
+
+  .eventDetails ul {
+    padding-left: 0;
+
+    li {
+    margin: 0;
+    }
+  }
+  
+  
+}

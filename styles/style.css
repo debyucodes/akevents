@@ -235,213 +235,6 @@ html {
   overflow: hidden;
 }
 
-.burger {
-  display: none;
-}
-
-.dropDown {
-  display: none;
-}
-
-.noScroll {
-  overflow: hidden;
-}
-
-.eventDes {
-  text-align: left;
-}
-
-.eventBanner h1 {
-  padding-bottom: 0;
-  margin-bottom: 0;
-}
-
-.eventBanner h5 {
-  padding-top: 0;
-  margin-top: 0;
-}
-
-.eventDetails {
-  position: relative;
-}
-
-.eventDetails h4,
-.eventDetails p {
-  margin: 0;
-}
-
-.eventDetails ul {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (minmax(300px, 2fr))[auto-fill];
-      grid-template-columns: repeat(auto-fill, minmax(300px, 2fr));
-  list-style: none;
-  text-align: left;
-}
-
-.eventDetails ul li {
-  margin: 20px;
-  background-color: white;
-  -webkit-transition: all 0.3s ease-out;
-  transition: all 0.3s ease-out;
-}
-
-.eventDetails ul h5 {
-  cursor: pointer;
-  font-size: 1rem;
-  margin-top: 10px;
-  padding: 0;
-}
-
-.eventDetails ul h5:hover {
-  color: grey;
-  text-decoration: underline;
-}
-
-.eventDetails ul hr {
-  margin: 10px 0 0 0;
-  max-width: 100px;
-}
-
-.eventDetails img {
-  -o-object-fit: cover;
-     object-fit: cover;
-  max-height: 300px;
-  max-width: 300px;
-  height: 300px;
-  margin-top: 20px;
-}
-
-.hiddenOverlay {
-  display: none;
-  position: fixed;
-  background-color: rgba(238, 231, 220, 0.5);
-  width: 100%;
-  height: 100%;
-  z-index: 1000;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  overflow-y: scroll;
-}
-
-.hiddenOverlay .innerOverlay {
-  background: white;
-  margin: 0 auto;
-  width: 80%;
-  margin-top: 20px;
-  padding: 50px;
-}
-
-.hiddenOverlay .innerOverlay p {
-  line-height: 1.5;
-}
-
-.hiddenOverlay .innerOverlay a {
-  color: black;
-  text-decoration: none;
-}
-
-.hiddenOverlay .innerOverlay i {
-  margin-right: 10px;
-  font-size: 1.5rem;
-}
-
-.overlayFlex {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.overlayFlex div {
-  width: 60%;
-}
-
-.overlayFlex img {
-  width: 40%;
-}
-
-.overlayFlex p {
-  text-align: left;
-  margin-top: 20px;
-}
-
-.closeOverlay {
-  position: absolute;
-  right: 30px;
-  top: 30px;
-  font-size: 30px;
-  cursor: pointer;
-}
-
-.button {
-  text-decoration: none;
-  font-size: 1.5rem;
-  background-color: grey;
-  color: white;
-  padding: 10px 30px;
-  -webkit-transition: all 0.3s ease-in;
-  transition: all 0.3s ease-in;
-}
-
-.button:hover {
-  background-color: black;
-  -webkit-box-shadow: inset 0 0 0 2px grey;
-          box-shadow: inset 0 0 0 2px grey;
-}
-
-.FAQ {
-  text-align: left;
-}
-
-.FAQ h4 {
-  cursor: pointer;
-}
-
-.FAQ i {
-  margin-right: 10px;
-}
-
-.FAQ p {
-  display: none;
-}
-
-.portfolio {
-  list-style: none;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (minmax(250px, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-}
-
-.portfolio li {
-  margin: 20px 0 20px 0;
-  width: 250px;
-  height: 250px;
-}
-
-.portfolio li img {
-  -o-object-fit: cover;
-     object-fit: cover;
-  width: 250px;
-  height: 250px;
-}
-
-@media (max-width: 800px) {
-  .burger {
-    display: block;
-    font-size: 2rem;
-    cursor: pointer;
-  }
-  hr {
-    width: 60%;
-  }
-  .menu {
-    display: none;
-  }
-}
-
 body {
   margin: 5% auto;
   text-align: center;
@@ -601,4 +394,230 @@ footer a {
   margin: 5% auto;
   width: 80%;
   max-width: 1500px;
+}
+
+.burger {
+  display: none;
+}
+
+.dropDown {
+  display: none;
+}
+
+.noScroll {
+  overflow: hidden;
+}
+
+.eventDes {
+  text-align: left;
+}
+
+.eventBanner h1 {
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+.eventBanner h5 {
+  padding-top: 0;
+  margin-top: 0;
+  font-size: 1.2rem;
+}
+
+.eventDetails {
+  position: relative;
+}
+
+.eventDetails h4,
+.eventDetails p {
+  margin: 0;
+}
+
+.eventDetails ul {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(300px, 2fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(300px, 2fr));
+  list-style: none;
+  text-align: left;
+}
+
+.eventDetails ul li {
+  margin: 20px;
+  background-color: white;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+.eventDetails ul h5 {
+  cursor: pointer;
+  font-size: 1rem;
+  margin-top: 10px;
+  padding: 0;
+}
+
+.eventDetails ul h5:hover {
+  color: grey;
+  text-decoration: underline;
+}
+
+.eventDetails ul hr {
+  margin: 10px 0 0 0;
+  max-width: 100px;
+}
+
+.eventDetails img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  max-height: 300px;
+  max-width: 300px;
+  height: 300px;
+  margin-top: 20px;
+}
+
+.hiddenOverlay {
+  display: none;
+  position: fixed;
+  background-color: rgba(238, 231, 220, 0.5);
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  overflow-y: scroll;
+}
+
+.hiddenOverlay .innerOverlay {
+  background: white;
+  margin: 0 auto;
+  width: 80%;
+  margin-top: 20px;
+  padding: 50px;
+}
+
+.hiddenOverlay .innerOverlay p {
+  line-height: 1.5;
+}
+
+.hiddenOverlay .innerOverlay a {
+  color: black;
+  text-decoration: none;
+}
+
+.hiddenOverlay .innerOverlay i {
+  margin-right: 10px;
+  font-size: 1.5rem;
+}
+
+.overlayFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.overlayFlex div {
+  width: 60%;
+}
+
+.overlayFlex img {
+  width: 40%;
+}
+
+.overlayFlex p {
+  text-align: left;
+  margin-top: 20px;
+}
+
+.closeOverlay {
+  position: absolute;
+  right: 30px;
+  top: 30px;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.button {
+  text-decoration: none;
+  font-size: 1.2rem;
+  background-color: grey;
+  color: white;
+  padding: 10px 30px;
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+}
+
+.button:hover {
+  background-color: black;
+  -webkit-box-shadow: inset 0 0 0 2px grey;
+          box-shadow: inset 0 0 0 2px grey;
+}
+
+.FAQ {
+  text-align: left;
+}
+
+.FAQ h4 {
+  cursor: pointer;
+}
+
+.FAQ i {
+  margin-right: 10px;
+}
+
+.FAQ p {
+  display: none;
+}
+
+.portfolio {
+  list-style: none;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(250px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.portfolio li {
+  margin: 20px 0 20px 0;
+  width: 250px;
+  height: 250px;
+}
+
+.portfolio li img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 250px;
+  height: 250px;
+}
+
+@media (max-width: 800px) {
+  .burger {
+    display: block;
+    font-size: 2rem;
+    cursor: pointer;
+  }
+  hr {
+    width: 60%;
+  }
+  .menu {
+    display: none;
+  }
+}
+
+@media (max-width: 500px) {
+  body {
+    border: none;
+    margin: 0 auto;
+  }
+  header h1 {
+    font-size: 40px;
+    margin: 0;
+    padding-bottom: 0;
+  }
+  .eventDetails ul {
+    padding-left: 0;
+  }
+  .eventDetails ul li {
+    margin: 0;
+  }
 }
