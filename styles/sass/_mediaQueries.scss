@@ -22,11 +22,26 @@
     width: 90%;
   }
 
-  header h1 {
-    font-size: 40px;
-    margin: 0;
-    padding-bottom: 0;
+  header {
+    // position: fixed;
+    // background-color: white;
+    // width: 100%;
+    // top: 0;
+    // left: 0;
+
+    h1 {
+      font-size: 40px;
+      margin: 0;
+      padding-bottom: 0;
+    }
+
+    .burger {
+      position: fixed;
+      top: 0;
+      left: 2;
+    }
   }
+  
 
   // event page
   .eventDetails ul {

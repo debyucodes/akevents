@@ -403,6 +403,8 @@ footer a {
 
 .dropDown {
   display: none;
+  z-index: 1000;
+  background-color: white;
 }
 
 .noScroll {
@@ -616,6 +618,11 @@ footer a {
     font-size: 40px;
     margin: 0;
     padding-bottom: 0;
+  }
+  header .burger {
+    position: fixed;
+    top: 0;
+    left: 2;
   }
   .eventDetails ul {
     padding-left: 0;
