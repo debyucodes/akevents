@@ -570,6 +570,54 @@ footer a {
   display: none;
 }
 
+.blogDetails ul {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(350px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  list-style: none;
+  text-align: left;
+  font-size: 12px;
+}
+
+.blogDetails ul .imgContainer {
+  width: 350px;
+}
+
+.blogDetails ul img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  max-height: 350px;
+  max-width: 350px;
+  width: 350px;
+  height: 350px;
+}
+
+.blogDetails ul h2 {
+  font-size: 18px;
+  margin: 0;
+}
+
+.blogDetails ul h4 {
+  margin: 0;
+  font-weight: 400;
+}
+
+.blogDetails ul h5 {
+  font-weight: 800;
+  font-size: 14px;
+}
+
+.blogDetails ul h5:hover {
+  text-decoration: underline;
+}
+
+.blogDetails ul .innerOverlay img {
+  width: 250px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
 .portfolio {
   list-style: none;
   display: -ms-grid;

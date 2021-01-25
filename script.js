@@ -26,7 +26,7 @@ app.faq = () => {
 
 // open overlay
 app.overlay = () => {
-  $('.eventDetails').find('h5').click(function(){
+  $('.details').find('h5').click(function(){
     $(this.parentElement).next('div').fadeIn();
     $('body').addClass('noScroll');
   })
