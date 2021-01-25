@@ -619,6 +619,11 @@ footer a {
      object-fit: contain;
 }
 
+.blogDetails ul .innerOverlay ul {
+  display: block;
+  list-style: inside;
+}
+
 .portfolio {
   list-style: none;
   display: -ms-grid;
