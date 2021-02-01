@@ -287,7 +287,8 @@ header a:hover {
 }
 
 .about {
-  margin: 50px;
+  width: 80%;
+  margin: 50px auto;
 }
 
 .about h2 {
