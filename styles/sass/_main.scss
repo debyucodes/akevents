@@ -47,8 +47,8 @@ header {
 }
 
 .about {
-  width: 60%;
-  margin: 50px auto;
+  // width: 60%;
+  margin: 50px;
 
   h2 {
     font-size: 35px;
@@ -72,9 +72,9 @@ header {
 
 .contact {
   background-color: #EDEDED;
-  margin: 30px auto;
+  margin: 10px auto;
   width: 80%;
-  padding: 20px;
+  padding: 5px;
 
   form {
     display: flex;
@@ -84,16 +84,16 @@ header {
 
     input,
     textarea {
-      margin: 10px 0;
-      padding: 15px;
+      margin: 5px 0;
+      padding: 10px;
     }
   }
 
   button {
-    padding: 20px;
+    padding: 10px;
     width: 40%;
     border: 2px solid black;
-    margin: 20px auto;
+    margin: 10px auto;
     cursor: pointer;
   }
 }

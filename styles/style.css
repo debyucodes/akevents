@@ -287,8 +287,7 @@ header a:hover {
 }
 
 .about {
-  width: 60%;
-  margin: 50px auto;
+  margin: 50px;
 }
 
 .about h2 {
@@ -312,9 +311,9 @@ header a:hover {
 
 .contact {
   background-color: #EDEDED;
-  margin: 30px auto;
+  margin: 10px auto;
   width: 80%;
-  padding: 20px;
+  padding: 5px;
 }
 
 .contact form {
@@ -331,15 +330,15 @@ header a:hover {
 
 .contact form input,
 .contact form textarea {
-  margin: 10px 0;
-  padding: 15px;
+  margin: 5px 0;
+  padding: 10px;
 }
 
 .contact button {
-  padding: 20px;
+  padding: 10px;
   width: 40%;
   border: 2px solid black;
-  margin: 20px auto;
+  margin: 10px auto;
   cursor: pointer;
 }
 
@@ -418,12 +417,6 @@ footer a {
   margin-bottom: 0;
 }
 
-.eventBanner h5 {
-  padding-top: 0;
-  margin-top: 0;
-  font-size: 1.2rem;
-}
-
 .eventDetails {
   position: relative;
 }
@@ -466,6 +459,20 @@ footer a {
   max-width: 100px;
 }
 
+.eventDetails {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap-reverse;
+      flex-wrap: wrap-reverse;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .eventDetails img {
   -o-object-fit: cover;
      object-fit: cover;
@@ -473,6 +480,10 @@ footer a {
   max-width: 300px;
   height: 300px;
   margin-top: 20px;
+}
+
+.eventDetails .button {
+  text-align: center;
 }
 
 .hiddenOverlay {
@@ -574,8 +585,8 @@ footer a {
 .blogDetails ul {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(350px, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  -ms-grid-columns: (minmax(250px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   list-style: none;
   text-align: left;
   font-size: 12px;
@@ -588,10 +599,10 @@ footer a {
 .blogDetails ul img {
   -o-object-fit: cover;
      object-fit: cover;
-  max-height: 350px;
-  max-width: 350px;
-  width: 350px;
-  height: 350px;
+  max-height: 250px;
+  max-width: 250px;
+  width: 250px;
+  height: 250px;
 }
 
 .blogDetails ul h2 {
@@ -607,6 +618,8 @@ footer a {
 .blogDetails ul h5 {
   font-weight: 800;
   font-size: 14px;
+  margin-top: 20px;
+  cursor: pointer;
 }
 
 .blogDetails ul h5:hover {
